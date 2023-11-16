@@ -1,0 +1,49 @@
+apiVersion: backstage.io/v1beta2
+kind: Template
+metadata:
+  name: web-app-template
+  title: Web Application on AWS
+  description: Scaffold a web application with Terraform on AWS
+spec:
+  owner: team-web
+  type: service
+
+  parameters:
+    - name: appName
+      type: string
+      description: Name for the application
+    - name: awsRegion
+      type: string
+      description: AWS region for deployment
+    - name: instanceType
+      type: string
+      description: AWS EC2 instance type
+
+  steps:
+    - id: fetch-repo
+      name: Fetch GitHub Repository
+      action: fetch:cookiecutter
+      input:
+        url: https://github.com/tudark179/backstage-terraform
+        values:
+          name: '{{ parameters.appName }}'
+
+    - id: setup-terraform
+      name: Setup Terraform
+      action: custom:run-terraform
+      input:
+        path: './terraform'
+        vars:
+          aws_region: '{{ parameters.awsRegion }}'
+          instance_type: '{{ parameters.instanceType }}'
+
+    - id: register-app
+      name: Register Application
+      action: catalog:register
+      input:
+        repoContentsUrl: '{{ steps.fetch-repo.output.repoContentsUrl }}'
+
+  output:
+    links:
+      - url: '{{ steps.setup-terraform.output.dashboardUrl }}'
+        title: AWS Dashboard
