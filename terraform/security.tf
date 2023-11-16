@@ -11,6 +11,10 @@ resource "aws_security_group_rule" "allow_http" {
   cidr_blocks = ["0.0.0.0/0"]
   security_group_id = aws_security_group.backstage_sg.id
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1412decea9dd44716978e0fba5c526c78362f556
 
 resource "aws_iam_role" "backstage_role" {
   name = "backstage_role"

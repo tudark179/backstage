@@ -4,7 +4,7 @@ variable "aws_region" {
 
 variable "backstage_ami_id" {
   description = "AMI ID for Backstage EC2 instance"
-  default     = "ami-0abcdef1234567890" # Replace a valid AMI ID
+  default     = "ami-0f723dfedd862c077" # Replace a valid AMI ID
 }
 
 variable "instance_type" {
