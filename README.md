@@ -1,6 +1,7 @@
 # Backstage.io User Guide for IAG's Developer Portal
 
 ## Introduction to Backstage
+## [CI/CD Process Documentation](docs/ci_cd_process.md)
 **Backstage.io** is an open platform for building developer portals, unifying infrastructure tooling, services, and documentation to create a streamlined development environment. It benefits developers by enhancing efficiency and simplifying the management of applications and services.
 
 ## Getting Started with Backstage
