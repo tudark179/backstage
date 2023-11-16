@@ -44,7 +44,7 @@ For customizing Backstage:
 
 Configuration: While this repository doesn't include app-config.yaml, you can create and configure it as per your needs following the [Configuration Documentation](https://backstage.io/docs/conf/).
 
-Plugins: Enhance Backstage by adding plugins. Refer to the [Plugin Marketplace](https://backstage.io/plugins).
+**Plugins:** Enhance Backstage by adding plugins. Refer to the [Plugin Marketplace](https://backstage.io/plugins).
 Troubleshooting and FAQs
 Address common hurdles:
 
@@ -53,5 +53,5 @@ Address common hurdles:
 **Contact and Support**
 Reach out for help or to contribute:
 
-**Community Support:** Join the Backstage Community for support.
-**GitHub Repository:** For specific issues or enhancements, visit the repository's issues section.
+**Community Support:** Join the [Backstage Community](https://backstage.io/community) for support.
+**GitHub Repository:** For specific issues or enhancements, visit the [repository's issues section](https://github.com/tudark179/backstage-terraform/issues).
