@@ -8,6 +8,8 @@ resource "aws_instance" "backstage" {
   key_name      = var.key_name
   subnet_id     = aws_subnet.backstage.id
 
+  user_data = file("${path.module}/backstage-setup.sh")
+
   tags = {
     Name = "BackstageInstance"
   }
