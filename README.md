@@ -1,9 +1,9 @@
-Backstage.io User Guide for IAG's Developer Portal
-Introduction to Backstage
+**Backstage.io User Guide for IAG's Developer Portal
+**Introduction to Backstage
 Backstage.io is a comprehensive platform designed to streamline the development environment. It helps in organizing infrastructure tooling, services, and documentation, thereby boosting developer productivity and facilitating easy management of applications.
 
-Getting Started with Backstage
-To begin using Backstage for IAG's Developer Portal, you will first need to set up the necessary infrastructure:
+**Getting Started with Backstage
+**To begin using Backstage for IAG's Developer Portal, you will first need to set up the necessary infrastructure:
 
 Clone the Infrastructure Repository:
 
@@ -11,14 +11,14 @@ bash
 Copy code
 git clone https://github.com/tudark179/backstage-terraform.git
 cd backstage-terraform
-Infrastructure Setup:
-Navigate to the terraform directory and follow the instructions to set up your AWS infrastructure using Terraform. Ensure you have the necessary permissions and configurations for AWS.
+**Infrastructure Setup:
+**Navigate to the terraform directory and follow the instructions to set up your AWS infrastructure using Terraform. Ensure you have the necessary permissions and configurations for AWS.
 
-Running Backstage:
-Once the infrastructure is in place, refer to the official Backstage documentation for steps to run and access the Backstage application: Backstage Getting Started.
+**Running Backstage:
+**Once the infrastructure is in place, refer to the official Backstage documentation for steps to run and access the Backstage application: Backstage Getting Started.
 
-Navigating the Backstage UI
-The Backstage interface is designed for ease of use:
+**Navigating the Backstage UI
+**The Backstage interface is designed for ease of use:
 
 Homepage: Displays an overview of available services and applications.
 Service Catalog: Manage and browse through the software components.
